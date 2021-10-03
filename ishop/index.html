@@ -5,63 +5,63 @@
 При разработке компонента максимально использовать forEach и другие методы обработки массивов. -->
 
 
- <!DOCTYPE html> 
- <html> 
- <head> 
+ <!DOCTYPE html>
+ <html>
+
+ <head>
    <meta charset="utf-8" />
    <title>ishop</title>
- </head> 
- <body> 
-   
-   <div id="container"></div> 
-       
-   <script src="https://unpkg.com/react@15/dist/react.js"></script> 
-   <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
-       
+ </head>
+
+ <body>
+
+   <div id="container"></div>
+
+   <script src="https://unpkg.com/react@15/dist/react.js"></script>
+   <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
    <script src="ishop.js"></script>
    <link rel="stylesheet" type="text/css" href="ishop.css" />
- 
+
    <script>
- 
-     var Maintext='список товаров';
- 
+     var Maintext = 'список товаров';
+
      function buildVotesBlock() {
- 
-       var shopArr=[ 
+
+       var shopArr = [{
+           block: 'Диван',
+           code: "sofa",
+           cost: 750,
+           url: "sofa.jpg",
+           kolvo: 10,
+         },
          {
-          block:'Диван',
-          code:"sofa",
-          cost:750, 
-          url:"sofa.jpg",
-          kolvo:10,
-         }, 
+           block: 'Стул',
+           code: "sit",
+           cost: 50,
+           url: "sit.jpeg",
+           kolvo: 15,
+         },
          {
-          block:'Стул',
-          code:"sit",
-          cost:50, 
-          url:"sit.jpeg",
-          kolvo:15,
-         }, 
-         {
-           block:'Стол',
-           cost:150,
-           url:"table.jpg",
-           kolvo:6,
-         } 
+           block: 'Стол',
+           cost: 150,
+           url: "table.jpg",
+           kolvo: 6,
+         }
        ];
-   
+
        ReactDOM.render(
-         React.createElement(ishop,{Maintext,shopArr}), 
-         document.getElementById('container') 
+         React.createElement(ishop, {
+           Maintext,
+           shopArr
+         }),
+         document.getElementById('container')
        );
-       
+
      }
- 
-   buildVotesBlock();
- 
-    
- 
+
+     buildVotesBlock();
    </script>
- 
- </body> 
+ </body>
+
  </html>

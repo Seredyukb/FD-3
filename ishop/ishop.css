@@ -1,10 +1,10 @@
 .table {
     border: solid 3px blue;
-    margin:20px;
+    margin: 20px;
 
 }
 
-.table .Count{
+.table .Count {
     border: solid 3px yellow;
-    margin:0;
+    margin: 0;
 }
