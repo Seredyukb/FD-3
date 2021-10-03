@@ -4,9 +4,9 @@ var ishop = React.createClass({
 
   render: function () {
 
-    var catalogCode = this.props.shopArr.map(v =>
+    var catalogCode = this.props.ProdName.map(v =>
       React.DOM.tbody({
-          key: v.code,
+          key: v.block,
           className: 'block'
         },
         React.DOM.tr({
@@ -15,12 +15,13 @@ var ishop = React.createClass({
           React.DOM.td({
             className: 'Count',
           }, v.block),
-          React.DOM.img({
-            className: 'Count',
+          React.DOM.td({
+            className: 'Count'
+          }, React.DOM.img({
             src: v.url,
             width: 100,
             height: 100,
-          }),
+          })),
           React.DOM.td({
             className: 'Count'
           }, 'Цена:' + v.cost),
