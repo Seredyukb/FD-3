@@ -24,7 +24,7 @@
    <link rel="stylesheet" type="text/css" href="ishop.css" />
 
    <script>
-     var Maintext = 'список товаров';
+     var text = 'список товаров';
 
      function buildVotesBlock() {
 
@@ -52,8 +52,8 @@
 
        ReactDOM.render(
          React.createElement(ishop, {
-           Maintext,
-           shopArr
+           Maintext: text,
+           ProdName: shopArr
          }),
          document.getElementById('container')
        );
