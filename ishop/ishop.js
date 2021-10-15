@@ -43,3 +43,11 @@ var ishop = React.createClass({
     );
   },
 });
+const app = ()=>{
+  return(
+    <div>
+      <h1>Hello, world!</h1>
+
+    </div>
+  )
+}
