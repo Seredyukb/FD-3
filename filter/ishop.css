@@ -1,18 +1,17 @@
 .table {
     border: solid 1px red;
-    margin:20px;
-
+    margin: 20px;
 }
-.table .nameProduct{
+.table .nameProduct {
     text-align: center;
     font-size: 20px;
     text-align: center;
 }
-.table .Count{
+.table .Count {
     border: solid 1px black;
-    margin:0;
+    margin: 0;
 }
-.divText{
+.divText {
     overflow: scroll;
     width: 200px;
     height: 200px;

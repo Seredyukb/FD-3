@@ -5,51 +5,36 @@
   <title></title>
 </head> 
 <body> 
-  
   <div id="container"></div> 
-      
   <script src="https://unpkg.com/react@15/dist/react.js"></script> 
   <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
-      
   <script src="filter.js"></script>
   <link rel="stylesheet" type="text/css" href="ishop.css" />
-
   <script>
-
-   
-
     function buildVotesBlock() {
-
       var Arr=[ 
-      'стол', 
-      'стул', 
-      'арбуз',
-      'кровать',
-      'флаг',
-      'табурет',
-      'диван',
-      'чай',
-      'кофе',
-      'стакан',
-      'сон',
-      'краб',
-      'чеснок',
-      'яблоко',
+      'фывфывфыв', 
+      'свапоыватул', 
+      'арбфпмсмтуз',
+      'кыявпрофывать',
+      'фывпыявплаг',
+      'тамькцунбурет',
+      'дваривфуываоанв',
+      'чцйуеимаьй',
+      'вфткоыатфьтве',
+      'йгцукгйхнш',
+      'шщгущолва',
+      'кивфлдвлдовраб',
+      'юьтролд',
+      'фываапр',
       ];
       var defaultFreeAnswerText="??";
       ReactDOM.render(
         React.createElement(filter,{words:Arr,  }), 
-        
         document.getElementById('container') 
       );
-      
     }
-
   buildVotesBlock();
-
-   
-
   </script>
-
 </body> 
 </html>

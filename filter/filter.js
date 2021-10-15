@@ -1,6 +1,5 @@
 var filter = React.createClass({
   displayName: 'filter',
-
   propTypes: {
   },
   getInitialState: function () {
@@ -17,14 +16,12 @@ var filter = React.createClass({
     this.setState({ contain: EO.target.value, }, this.generator)
   },
   generator: function (EO) {
-    /////////////////
-    let work = this.props.words.slice(); // делаем плоскую копию всех слов, т.к. возможно будем сортировать массив
+    let work = this.props.words.slice();
     if (this.state.contain)
       work = work.filter(work => work.indexOf(this.state.contain) != -1);
     if (this.state.sorted)
       work.sort();
     this.setState({ work: work });
-    ////////////
   },
   render: function () {
     var catalogCode = this.state.work.map(v =>
@@ -33,7 +30,7 @@ var filter = React.createClass({
     catalogCode2 = { catalogCode, sorted: this.props.sorted = 'false', contain: this.props.contain = '', }
     return React.DOM.div(null,
       React.DOM.input({
-        type: 'checkbox', name: 'check', className: 'Check', onClick: this.sort,//defaultChecked:'false'
+        type: 'checkbox', name: 'check', className: 'Check', onClick: this.sort,
       }),
       React.DOM.input({
         type: 'text', name: 'text', className: 'text', onInput: this.inputfilter,
