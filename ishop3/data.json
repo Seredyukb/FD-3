@@ -1,0 +1,23 @@
+[
+    {
+        "block": "Диван",
+        "code": "sofa",
+        "cost": 750,
+        "url": "sofa.jpg",
+        "kolvo": 10
+    },
+    {
+        "block": "Стул",
+        "code": "sit",
+        "cost": 50,
+        "url": "sit.jpg",
+        "kolvo": 15
+    },
+    {
+        "block": "Стол",
+        "code": "table",
+        "cost": 150,
+        "url": "table.jpg",
+        "kolvo": 6
+    }
+]
